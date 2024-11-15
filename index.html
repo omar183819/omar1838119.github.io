@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Página informativa sobre las principales enfermedades, tratamientos y hospitales en Monterrey">
+    <title>Medicina en Monterrey</title>
+    <link rel="shortcut icon" href="./img/medco.png" type="image/x-icon">
+    <style>
+        /* Aplicar Century Gothic a toda la página */
+        body {
+            font-family: "Century Gothic", sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f3f3f3;
+        }
+
+        /* Estilos de la barra de navegación */
+        .navbar {
+            background-color: #232f3e;
+            color: white;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px;
+        }
+
+        .navbar a, .navbar h1 {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            margin: 0 15px;
+        }
+
+        /* Barra lateral de categorías */
+        .sidebar {
+            width: 200px;
+            background-color: #eaeaea;
+            padding: 20px;
+            position: fixed;
+            top: 60px;
+            bottom: 0;
+            overflow-y: auto;
+        }
+
+        .sidebar h2 {
+            font-size: 18px;
+            color: #232f3e;
+        }
+
+        .sidebar ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .sidebar li a {
+            text-decoration: none;
+            color: #333;
+            display: block;
+            padding: 10px;
+            border-bottom: 1px solid #ddd;
+        }
+
+        /* Estilos del contenido principal */
+        .main-content {
+            margin-left: 220px;
+            padding: 20px;
+        }
+
+        .section {
+            background-color: white;
+            padding: 15px;
+            margin-bottom: 15px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+
+        .section h2 {
+            color: #232f3e;
+            font-size: 20px;
+        }
+
+        .button-primary {
+            background-color: #ff9900;
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            display: inline-block;
+            margin-top: 10px;
+        }
+
+        .section img {
+            width: 100%;
+            max-width: 250px;
+            border-radius: 5px;
+            margin-right: 15px;
+        }
+
+        /* Estilos del pie de página */
+        footer {
+            background-color: #232f3e;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            position: relative;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Barra de Navegación -->
+    <header class="navbar">
+        <h1>Medicina en Monterrey</h1>
+        <nav>
+            <a href="#">Inicio</a>
+            <a href="#enfermedades">Enfermedades</a>
+            <a href="#tratamientos">Tratamientos</a>
+            <a href="#hospitales">Hospitales</a>
+            <a href="#contacto">Contacto</a>
+        </nav>
+    </header>
+
+    <!-- Barra Lateral de Categorías -->
+    <aside class="sidebar">
+        <h2>Secciones</h2>
+        <ul>
+            <li><a href="#enfermedades">Enfermedades</a></li>
+            <li><a href="#tratamientos">Tratamientos</a></li>
+            <li><a href="#hospitales">Hospitales</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+        </ul>
+    </aside>
+
+    <!-- Contenido Principal -->
+    <main class="main-content">
+        <!-- Sección de Introducción -->
+        <section class="section">
+           <h2>Bienvenido a Medicina en Monterrey</h2>
+            <p>En esta página encontrarás información sobre las principales enfermedades, tratamientos y hospitales en Monterrey.</p>
+        </section>
+
+        <!-- Sección de Imágenes -->
+        <section class="section">
+            <h2>Imágenes Destacadas</h2>
+            <img src="img/Dc.jpg" alt="">
+            <img src="img/docrtor.jpg" alt="">
+            <img src="img/Doctores.jpg" alt="">
+            <img src="img/medicina.jpg" alt="">
+            <img src="img/Quirofano.jpg" alt="">
+        </section>
+
+        <!-- Sección de Enfermedades -->
+        <section class="section" id="enfermedades">
+            <h2>Enfermedades</h2>
+            <p>Consulta información sobre las enfermedades más comunes en Monterrey, incluyendo enfermedades crónicas y mentales.</p>
+            <ul>
+                <li>Diabetes</li>
+                <li>Enfermedades Cardiovasculares</li>
+                <li>Depresión</li>
+                <li>Cáncer</li>
+            </ul>
+        </section>
+
+        <!-- Sección de Tratamientos -->
+        <section class="section" id="tratamientos">
+            <h2>Tratamientos</h2>
+            <p>Descubre los tratamientos más efectivos para diversas enfermedades, desde opciones médicas hasta intervenciones quirúrgicas.</p>
+            <ol>
+                <li>Terapias de Insulina</li>
+                <li>Medicamentos Antidepresivos</li>
+                <li>Quimioterapia</li>
+                <li>Cirugía Cardiovascular</li>
+            </ol>
+        </section>
+
+        <!-- Sección de Hospitales -->
+        <section class="section" id="hospitales">
+            <h2>Hospitales</h2>
+            <p>Encuentra los hospitales y centros de salud recomendados en Monterrey para el tratamiento de diversas enfermedades.</p>
+            <table border="1" width="100%">
+                <tr>
+                    <th>Hospital</th>
+                    <th>Ubicación</th>
+                    <th>Especialidad</th>
+                </tr>
+                <tr>
+                    <td>Instituto Nacional de Cardiología</td>
+                    <td>Monterrey, Nuevo León</td>
+                    <td>Cardiología</td>
+                </tr>
+                <tr>
+                    <td>Hospital Universitario </td>
+                    <td>Monterrey, Nuevo León</td>
+                    <td>Medicina General</td>
+                </tr>
+                <tr>
+                    <td>Hospital Universitario</td>
+                    <td>Monterrey, Nuevo León</td>
+                    <td>Cáncer y Terapias Avanzadas</td>
+                </tr>
+            </table>
+        </section>
+
+        <!-- Formulario de Contacto -->
+        <section class="section" id="contacto">
+            <h2>Contáctanos</h2>
+            <form action="#" method="POST">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required>
+                
+                <label for="email">Correo Electrónico:</label>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="mensaje">Mensaje:</label>
+                <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
+                
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+    </main>
+
+    <!-- Pie de Página -->
+    <footer>
+        <p>&copy; 2024 Medicina en Monterrey - Todos los derechos reservados.</p>
+    </footer>
+
+</body>
+</html>
